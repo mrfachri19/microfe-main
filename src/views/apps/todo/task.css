@@ -1,0 +1,14 @@
+.graytask {
+    background-color: #718096;
+}
+.bluetask {
+    background-color: #3182CE;
+}
+.greentask {
+    background-color: #43A047;
+}
+.whitetask {
+    background-color: white;
+    border-width: 5px;
+    border-color: #718096;
+}

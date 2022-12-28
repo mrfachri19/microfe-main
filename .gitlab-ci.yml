@@ -1,0 +1,47 @@
+image: docker:19.03.8
+
+variables:
+  BUILD_IMAGE: $CI_REGISTRY/$CI_REGISTRY_USER/$CI_PROJECT_NAME
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+
+stages:  
+  - build-dev
+  - deploy-dev
+  # - test-dev
+  # - dast-dev
+  # - load-test
+  
+services:
+  - docker:19.03.8-dind
+
+build-image:
+  tags:
+    - dev
+    - docker
+  stage: build-dev
+  before_script:
+    - docker login -u $HARBORPRODUSER -p $HARBORPRODPASS $HARBORPRODURL
+  script:
+    - docker build -t diarium-react-dev:latest .
+    - docker tag diarium-react-dev:latest $HARBORPRODURL/development/diarium-react:latest
+    - docker push $HARBORPRODURL/development/diarium-react:latest
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "development"' 
+
+deploy-image:
+  tags:
+    - dev
+    - docker   
+  stage: deploy-dev
+  image:
+    name: openshift/origin-cli
+  before_script:
+    - oc login $OSHDEVSERVER -u $OSHDEVUSER -p $OSHDEVPASS --insecure-skip-tls-verify
+  script:    
+    - oc project test-03
+    - oc rollout latest deploymentConfig/diarium-react-main
+  allow_failure: true
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "development"'   

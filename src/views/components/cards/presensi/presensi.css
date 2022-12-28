@@ -1,0 +1,131 @@
+.bg_presensi {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+.bg_chekin {
+  background-color: rgb(255 255 255);
+}
+
+.bg_cuti {
+  background-color: rgb(255, 255, 255);
+}
+.col_presensi {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.skeleton_presensi {
+  display: flex;
+  width: 100%;
+  height: 14rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.bg_presensicheckin {
+  display: grid;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+.display_presensi {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+.text_presensitertery {
+  color: rgb(71 85 105);
+  line-height: 1.5rem;
+}
+.text_checkout {
+  color: rgb(71 85 105);
+  line-height: 1.75rem;
+}
+.text_checkin {
+  line-height: 1.75rem;
+}
+.text_infopresensi {
+  padding-top: 1.50rem;
+  color:#000000;
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.text_banner {
+  padding-top: 1rem;
+  color:#000000;
+
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+.flex_infopresensi {
+  
+  flex-direction: row;
+}
+.filled_infopresensi {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+}
+.asset_presensi {
+  display: flex;
+  overflow: visible;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 10rem; */
+  cursor: pointer;
+  margin-top: auto;
+}
+.height_assetpresensi {
+  object-fit: cover;
+  height: 80%;
+}
+.heightAssetPresensiModal {
+  object-fit: cover;
+  height: 20px;
+}
+.sumary_presensi {
+  position: absolute;
+  bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.background_img{
+  display: flex;
+  overflow: visible;
+  flex-direction: row;
+}
+.bg_img {
+  display: flex;
+  overflow: visible;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 10rem; */
+  width: 30%;
+}
+
+#jam{
+  padding-top: 1rem;
+}
+
+#textCheckout{
+    color: #718096;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+
+.header-modal{
+  background-color: #319795 !important;
+  color: white;
+}

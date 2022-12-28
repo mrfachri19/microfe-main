@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>Diarium</title>
+
+<!-- Google Analytics and gtag manager settings -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-794H035CXL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-794H035CXL');
+    gtag('event', 'session_start')
+    gtag('event', 'page_view')
+    gtag('event', 'first_visit')
+    gtag('event', 'click')
+    gtag('event', 'page_location')
+    gtag('event', 'page_title')
+    gtag('event', 'screen_resolution')
+    gtag('event', 'screen_view', {
+      'app_name': 'Diarium',
+      'screen_name': 'Dashboard'
+    });
+    gtag("event", "login", {
+      method: "Google"
+    });
+  </script>
+
+  <script>
+    var generalVersion = `v5.0.1`;
+    var date = "220822";
+    var versionbatch = "1";
+    var versionNumber = `${generalVersion}-${date}-${versionbatch}`;
+    checkVersion();
+    
+    function checkVersion(){
+      const version = localStorage.getItem("Versioning");
+        if (version) {
+          if (version != `diarium-${versionNumber}`) {
+            localStorage.setItem("Versioning", `diarium-${versionNumber}`);
+            window.location.reload(true);
+          }
+        } else {
+          localStorage.setItem("Versioning", `diarium-${versionNumber}`);
+          window.location.reload(true);
+        }
+    }
+  </script>
+  <!-- End of Google Analytics and gtag manager settings -->
+  
+  <link rel="manifest" href="manifest.json" />
+  <link rel="shortcut icon" href="https://diarium.telkom.co.id/favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

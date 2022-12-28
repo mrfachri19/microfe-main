@@ -1,0 +1,128 @@
+// Overrides user _variables-components
+@import '../../bootstrap-extended/include';
+
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+$white-color: (
+  'base': #ffffff
+);
+$black-color: (
+  'base': #000000
+);
+$dark-color: (
+  'base': $dark,
+  'darken-1': #343434,
+  'darken-2': #1e1e1e,
+  'darken-3': #626262
+);
+$light-color: (
+  'base': $light
+);
+
+$primary-color: (
+  'lighten-4': mix(white, $primary, 20%),
+  'lighten-3': mix(white, $primary, 15%),
+  'lighten-2': mix(white, $primary, 10%),
+  'lighten-1': mix(white, $primary, 5%),
+  'base': $primary,
+  'darken-1': mix(black, $primary, 5%),
+  'darken-2': mix(black, $primary, 10%),
+  'darken-3': mix(black, $primary, 15%),
+  'darken-4': mix(black, $primary, 20%)
+);
+$secondary-color: (
+  'lighten-4': mix(white, $secondary, 20%),
+  'lighten-3': mix(white, $secondary, 15%),
+  'lighten-2': mix(white, $secondary, 10%),
+  'lighten-1': mix(white, $secondary, 5%),
+  'base': $secondary,
+  'darken-1': mix(black, $secondary, 5%),
+  'darken-2': mix(black, $secondary, 10%),
+  'darken-3': mix(black, $secondary, 15%),
+  'darken-4': mix(black, $secondary, 20%)
+);
+
+// #4839EB
+//
+$success-color: (
+  'lighten-4': mix(white, $success, 20%),
+  'lighten-3': mix(white, $success, 15%),
+  'lighten-2': mix(white, $success, 10%),
+  'lighten-1': mix(white, $success, 5%),
+  'base': $success,
+  'darken-1': mix(black, $success, 5%),
+  'darken-2': mix(black, $success, 10%),
+  'darken-3': mix(black, $success, 15%),
+  'darken-4': mix(black, $success, 20%)
+);
+$info-color: (
+  'lighten-4': mix(white, $info, 20%),
+  'lighten-3': mix(white, $info, 15%),
+  'lighten-2': mix(white, $info, 10%),
+  'lighten-1': mix(white, $info, 5%),
+  'base': $info,
+  'darken-1': mix(black, $info, 5%),
+  'darken-2': mix(black, $info, 10%),
+  'darken-3': mix(black, $info, 15%),
+  'darken-4': mix(black, $info, 20%)
+);
+$warning-color: (
+  'lighten-4': mix(white, $warning, 20%),
+  'lighten-3': mix(white, $warning, 15%),
+  'lighten-2': mix(white, $warning, 10%),
+  'lighten-1': mix(white, $warning, 5%),
+  'base': $warning,
+  // #FFAC5D
+  'darken-1': mix(black, $warning, 5%),
+  'darken-2': mix(black, $warning, 10%),
+  'darken-3': mix(black, $warning, 15%),
+  'darken-4': mix(black, $warning, 20%)
+);
+$danger-color: (
+  'lighten-4': mix(white, $danger, 20%),
+  'lighten-3': mix(white, $danger, 15%),
+  'lighten-2': mix(white, $danger, 10%),
+  'lighten-1': mix(white, $danger, 5%),
+  'base': $danger,
+  'darken-1': mix(black, $danger, 5%),
+  'darken-2': mix(black, $danger, 10%),
+  'darken-3': mix(black, $danger, 15%),
+  'darken-4': mix(black, $danger, 20%)
+);
+$error-color: (
+  'lighten-4':mix(white, $error, 20%),
+  'lighten-3':mix(white, $error, 15%),
+  'lighten-2':mix(white, $error, 10%),
+  'lighten-1':mix(white, $error, 5%),
+  'base': $error,
+  'darken-1': mix(black, $error, 5%),
+  'darken-2': mix(black, $error, 10%),
+  'darken-3': mix(black, $error, 15%),
+  'darken-4': mix(black, $error, 20%)
+);
+$tertiary-color: (
+  'lighten-4': mix(white, $tertiary, 20%),
+  'lighten-3': mix(white, $tertiary, 15%),
+  'lighten-2': mix(white, $tertiary, 10%),
+  'lighten-1': mix(white, $tertiary, 5%),
+  'base': $tertiary,
+  'darken-1': mix(black, $tertiary, 5%),
+  'darken-2': mix(black, $tertiary, 10%),
+  'darken-3': mix(black, $tertiary, 15%),
+  'darken-4': mix(black, $tertiary, 20%)
+);
+
+$colors: (
+  'white': $white-color,
+  'black': $black-color,
+  'dark': $dark-color,
+  'light': $light-color,
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'success': $success-color,
+  'info': $info-color,
+  'warning': $warning-color,
+  'danger': $danger-color,
+  'error': $error-color,
+  'tertiary': $tertiary-color
+);

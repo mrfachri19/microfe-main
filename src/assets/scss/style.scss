@@ -1,0 +1,700 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.background-cover { 
+  height: 100vh;
+}
+
+.card-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .empty-ilu {
+    margin: auto;
+  }
+}
+
+.avatar-icon { 
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  
+  .avatar-content {
+  	margin: auto !important;
+  }
+}
+
+.photo-karyawan-group {
+  .avatar {
+    overflow: hidden;
+    img {
+      // width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      object-position: 50% 0;
+    }
+  }
+}
+
+.avatar.photo-karyawan {
+  overflow: hidden;
+  img {
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
+
+.avatar {
+  overflow: hidden;
+  img {
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
+
+.card-developer-meetup {
+  .info-meeting {
+    overflow: hidden;
+    .info-meeting-detail * {
+      max-width: 250px;
+    }
+  }
+}
+
+.img-contain {
+  object-fit: contain;
+  width: inherit;
+  min-height: 190px;
+}
+
+.carousel-caption {
+  // background: #000;
+  // position: initial;
+  padding: 0.5rem 1rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  --bs-bg-opacity: 0.5;
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.card-carousel .carousel-inner:hover {
+  cursor: pointer;
+  .carousel-caption {
+    --bs-bg-opacity: 1;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: .25rem;
+}
+
+.card-developer-meetup {
+  .carousel-indicators {
+    margin-bottom: 0;//.25rem;
+  }
+}
+
+.slide-up-now {
+  animation: slide-up .6s cubic-bezier(0.4, 0, 0.2, 1) 500ms backwards;
+}
+
+.employee-task {
+  display: flex;
+  .employee-task-status { 
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.carousel-acara {
+  padding: 0;
+  .content-acara {
+    padding: 1.5rem;
+  }
+}
+
+.loading-diarium {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .effect-1,
+  .effect-2,
+  .effect-3 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: 3px solid var(--bs-secondary);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .effect-1 {
+    position: absolute;
+    animation: rotate 1s ease infinite;
+  }
+  .effect-2 {
+    position: absolute;
+    animation: rotateOpacity 1s ease infinite 0.1s;
+  }
+  .effect-3 {
+    -webkit-animation: rotateOpacity 1s ease infinite 0.2s;
+    animation: rotateOpacity 1s ease infinite 0.2s;
+  }
+
+  .loading-diarium .effects {
+    transition: all 0.3s ease;
+  }
+}
+
+.fallback-logo {
+  position: absolute;
+  left: calc(50% + 5px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-image-preview {
+  .modal-content {
+    background: transparent;
+    border-radius: 0;
+    img {
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.2);
+      min-height: 60vh;
+      max-height: 70vh;
+      max-width: 80vw;
+      height: 100%;
+      width: auto;
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+    }
+
+    .image-caption {
+      position: fixed !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      left: 0 !important;
+      background-color: var(--bs-tertiary-900);
+      padding: 1rem 4rem 2rem 4rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+.business-card .business-items:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.card-smarttips {
+  .transaction-item {
+    display: grid !important;
+    grid-template-columns: .5rem 1fr;
+    grid-column-gap: 1rem;
+  }
+}
+
+.side-button>button {
+  padding-left: 0;
+}
+
+.side-button>div {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.2);
+  button {
+    width: 100% !important;
+  }
+}
+
+.card-img-top {
+  // width: 100%;
+  object-fit: cover;
+  height: 250px;
+  background: var(--bs-primary);
+}
+
+.btn-cancel {
+  border-color: var(--bs-primary-100) !important;
+  background-color: var(--bs-primary-100) !important;
+  color: var(--bs-primary-600) !important;
+}
+
+.profile-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--bs-tertiary-700);
+    }
+
+    span:last-of-type {
+      font-size: 1rem;
+      font-weight: normal;
+      color: var(--bs-tertiary-600);
+    }
+  }
+  .sidebar-content:hover {
+    background-color: var(--bs-primary-100);
+    span {
+      color: var(--bs-primary-600) !important;
+    }
+  }
+  .sidebar-content:last-of-type {
+    border-left: solid 2px var(--bs-tertiary-300);
+  }
+}
+
+.subtab-header {
+  border-bottom: solid 3px var(--bs-tertiary-400);
+}
+
+.list-group {
+  .list-group-item:hover {
+    background: var(--bs-primary-100) !important;
+    color: var(--bs-primary) !important;
+  }
+  .list-group-item {
+    border: 0;
+  }
+  .list-group-item.active {
+    background: var(--bs-primary-100) !important;
+    border-color: var(--bs-primary) !important;
+    border-width: .5rem !important;
+    color: var(--bs-primary) !important;
+    border: 0;
+    border-left: solid;
+    border-radius: 0;
+  }
+}
+
+.nav-tabs.nav-fill {
+  .nav-item:hover {
+    background: var(--bs-primary-100) !important;
+    color: var(--bs-primary) !important;
+  }
+}
+
+.notification-firend-confirmation {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.copy-right-bottom {
+  position: fixed;
+  display: flex;
+  bottom: 1.8rem;
+  left: 0;
+  right: 0;
+  
+  p {
+    display: flex;
+    min-width: 1240px;
+    margin: auto;
+  }
+}
+
+.company-logo {
+  position: fixed;
+  display: flex;
+  top: 6rem;
+  left: 0;
+  right: 0;
+
+  .image-telkom {
+    justify-content: end;
+    display: flex;
+    min-width: 1240px;
+    margin: auto;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.box-img { 
+  img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.box-img-1 { 
+  img {
+    height: unset;
+    width: 100%;
+    object-fit: scale-down;
+  }
+}
+
+.box-img-2 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.box-img-3 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'image1 image2' 'image1 image3';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  img:nth-child(1) {
+    grid-area: image1;
+    height: 100%;
+  }
+  img:nth-child(2) {
+    grid-area: image2;
+    height: 15rem;
+  }
+  img:nth-child(3) {
+    grid-area: image3;
+    height: 15rem;
+  }
+}
+
+.box-img-4 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'image1 image2' 'image1 image3' 'image1 image4';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  img:nth-child(1) {
+    grid-area: image1;
+    height: 100%;
+  }
+  img:nth-child(2) {
+    grid-area: image2;
+    height: 10rem;
+  }
+  img:nth-child(3) {
+    grid-area: image3;
+    height: 10rem;
+  }
+  img:nth-child(4) {
+    grid-area: image4;
+    height: 10rem;
+  }
+}
+
+.graytask {
+  background-color: var(--bs-tertiary-600) !important;
+}
+.bluetask {
+  background-color: var(--bs-info-600) !important;
+}
+.greentask {
+  background-color: var(--bs-primary-600) !important;
+}
+.whitetask {
+  background-color: white;
+  border-width: 2px;
+}
+
+.iframe-diarium-embed {
+  height: calc(100vh - 11rem) !important;
+  max-height: calc(100vh - 11rem) !important;
+}
+
+.mini-box-img { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.list-search,
+.list-profile-edu {
+  .list-search-items,
+  .list-profile-edu-items {
+    padding: 1rem 0;
+    border-bottom: solid 2px var(--bs-tertiary-400);
+  }
+  .list-search-items:last-child,
+  .list-profile-edu-items:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.comment-log-section {
+  .comment-log-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+    .content-comment {
+      flex: 1;
+      padding-right: 1.5rem;
+      font-size: 1rem;
+    }
+    .time-comment {
+      font-size: .7rem;
+      width: 7.5rem;
+      text-align: right;
+      color: var(--bs-tertiary-500);
+      margin-bottom: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+// html{
+//   .content.app-content {
+//     padding: calc(1rem + 4.45rem + 1.3rem) 0 0 !important;
+//   }
+// }
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.floating-nav {
+  width: calc(100vw - (100vw - 100%) - 8rem) !important; 
+}
+
+.todo-status-detail {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.todo-status-detail:hover {
+  background-color: var(--bs-primary-100);
+}
+
+.modal-content { 
+  .modal-header {
+    background: var(--bs-primary) !important;
+    color: white !important;
+    .modal-title {
+      color: white !important;
+      * {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.modal-slide-in {
+  .modal-header {
+    border-radius: 0;
+  }
+
+}
+
+.side-menu-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// media height
+@media ( max-height: 768px ){
+  .copy-right-bottom {
+    position: static;
+    bottom: 0;
+    margin-top: 30px;
+  
+    p {
+      min-width: 100%;
+      padding: 0 !important;
+    }
+  }
+
+  .company-logo {
+    position: static !important;
+    top: 0;
+    margin-bottom: 2rem;
+
+    .image-telkom {
+      min-width: 100%;
+      padding: 0 !important;
+    }
+  }
+
+  #user-profile .profile-header .profile-img-container .profile-img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .modal-image-preview {
+    .modal-content {
+      img {
+        min-height: unset;
+      }
+    }
+  }
+}
+
+.welcome-text-presence {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.quote-text-presence {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.presence-info {
+  max-height: 190px;
+}
+
+// media width
+@media (max-width: 576px){
+  #user-profile .profile-header .profile-img-container .profile-img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
+@media ( max-width: 768px ){
+  .copy-right-bottom {
+    position: static;
+    bottom: 0;
+    margin-top: 30px;
+  
+    p {
+      min-width: 100%;
+      padding: 0 !important;
+      // span {
+      //   width: 100%;
+      // }
+      .version-info {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .header-navbar.floating-nav {
+      width: 100vw !important;
+      margin-left: calc(1rem - 0.8rem);
+      margin-right: calc(1rem - 0.8rem);
+  }
+
+  #user-profile .profile-header .profile-img-container .profile-img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .modal-image-preview {
+    .modal-content {
+      img {
+        min-height: unset;
+      }
+    }
+  }
+  html body .app-content {
+    padding: calc(1rem + 4.45rem + 1.3rem) calc(1rem - 0.8rem) 0 calc(1rem - 0.8rem) !important;
+  }
+}
+
+@media (max-width: 1024px){
+  .modal-dialog {
+    max-width: 90vw !important;
+  }
+  .copy-right-bottom {
+    position: static ;
+    bottom: 0;
+    margin-top: 2rem;
+  
+    p {
+      min-width: 100%;
+      padding: 0 !important;
+    }
+  }
+
+  .company-logo {
+    position: static !important;
+    top: 0;
+    margin-bottom: 2rem;
+
+    .image-telkom {
+      min-width: 100%;
+      padding: 0 !important;
+    }
+  }
+
+  .presence-info {
+    max-height: unset !important;
+  }
+}
+
+@media (max-width: 1300px){
+  .modal-dialog {
+    max-width: 90vw !important;
+  }
+
+  .copy-right-bottom {
+    p {
+      min-width: 100%;
+      padding: 0 3rem;
+    }
+  }
+
+  .company-logo {
+    .image-telkom {
+      min-width: 100%;
+      margin: auto;
+      padding: 0 3rem;
+    }
+  }
+}
